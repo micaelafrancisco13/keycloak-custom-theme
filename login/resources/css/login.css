@@ -34,7 +34,10 @@ a {
     color: var(--color-body-error);
 }
 
-#username, #password {
+#username,
+#password,
+#password-new,
+#password-confirm {
     background: var(--color-secondary);
     border: none!important;
     color: var(--color-body);
@@ -46,11 +49,17 @@ a {
     margin-bottom: 24px;
 }
 
-#username:focus, #password:focus {
+#username:focus,
+#password:focus,
+#password-new:focus,
+#password-confirm:focus {
     outline: 1px solid var(--color-body)!important;
 }
 
-#username::placeholder, #password::placeholder {
+#username::placeholder,
+#password::placeholder,
+#password-new::placeholder,
+#password-confirm::placeholder {
     color: var(--color-body);
 }
 
