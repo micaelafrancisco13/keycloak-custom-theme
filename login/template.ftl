@@ -40,9 +40,11 @@
 <div class="${properties.kcLoginClass!}">
     <div id="kc-header" class="${properties.kcHeaderClass!}">
 <#--        <div id="kc-header-wrapper"-->
-<#--             class="${properties.kcHeaderWrapperClass!}">${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</div>-->
+<#--             class="${properties.kcHeaderWrapperClass!}">${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}-->
+<#--        </div>-->
+
         <div id="kc-header-wrapper">
-            <img src="${msg("company_logo")}" alt="Company Logo" />
+            <img src="${msg("deepdata_logo_white_300x74")}" alt="DeepData Logo" />
         </div>
     </div>
     <div class="${properties.kcFormCardClass!}">
@@ -81,7 +83,7 @@
                 <div class="${properties.kcContentWrapperClass!}">
                     <div class="${properties.kcLabelWrapperClass!} subtitle">
                         <span class="subtitle"><span class="required">*</span> ${msg("requiredFields")}</span>
-                    </div>
+                    </div>f
                     <div class="col-md-10">
                         <#nested "show-username">
                         <div id="kc-username" class="${properties.kcFormGroupClass!}">

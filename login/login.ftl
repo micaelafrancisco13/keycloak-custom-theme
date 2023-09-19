@@ -65,6 +65,8 @@
                       <input type="hidden" id="id-hidden-input" name="credentialId" <#if auth.selectedCredential?has_content>value="${auth.selectedCredential}"</#if>/>
                       <input tabindex="4" class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" name="login" id="kc-login" type="submit" value="${msg("doLogIn")}"/>
                   </div>
+
+                <p id="copyright-text">2023 © DeepData Inc.</p>
             </form>
         </#if>
         </div>
@@ -74,7 +76,7 @@
         <#if realm.password && realm.registrationAllowed && !registrationDisabled??>
             <div id="kc-registration-container">
                 <div id="kc-registration">
-                    <span>${msg("noAccount")} <a tabindex="6"
+                    <span >${msg("noAccount")} <a id="kc-registration-link" tabindex="6"
                                                  href="${url.registrationUrl}">${msg("doRegister")}</a></span>
                 </div>
             </div>
